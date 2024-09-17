@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    overscroll-behavior: none;
+    overflow-x: hidden;
+    /* outline: 1px solid blue; */
+}
+
+img {
+    image-rendering: optimizeSpeed;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #232931;
+}
+
+nav {
+    background-color: #232931;
+}
+
+nav ul {
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.desktop-menu {
+    gap: 2em;
+}
+
+.hideOnMobile {
+    background-color: none;
+}
+
+nav li {
+    height: 3.125em;
+}
+
+nav a {
+    height: 100%;
+    padding: 0 1.875em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    border-radius: 7px;
+}
+
+nav li:first-child { 
+    margin-right: auto;
+}
+
+.logo {
+    font-family: "Audiowide", sans-serif;
+    height: inherit;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 0;
+    z-index: 999;
+    background: linear-gradient(160deg, #393e46 60%, #4ecca3 60%);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    transition: width 300ms ease;
+}
+
+.sidebar li {
+    width: 100%;
+}
+
+.sidebar a {
+    color: #ffffff;
+    width: 100%;
+}
+
+.menuButton {
+    display: none;
+}
+
+@media(min-width: 1080px) {
+    nav {
+        background-color: #232931;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+
+    .top {
+        margin: 3em;
+    }
+
+    nav a:hover {
+        background-color: #4ecca3;
+    }
+
+    /* .cta:hover {
+        background-color: #63ffcb;
+    } */
+
+    .faq {
+        margin: 3em;
+    }
+
+    .footermenu a:hover {
+        background-color: #4ecca3;
+    }
+
+    .btn:hover {
+        background-color: #63ffcb;
+    }
+}
+
+@media(max-width: 1079px) {
+    .hideOnMobile {
+        display: none;
+    }
+
+    .menuButton {
+        display: block;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+    }
+
+    .faq {
+        margin: 1em;
+    }
+
+    .logo {
+        margin-right: auto;
+    }
+
+    .footermenu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media(max-width: 400px) {
+}
+
+/* .cta {
+    font-size: larger;
+    width: max-content;
+    background-color: #4ecca3;
+    padding: .5em .5em .5em .5em;
+    border: none;
+    border-radius: 7px;
+    margin: auto;
+    cursor: pointer;
+}
+
+.ctatop {
+    margin: 1em 0 0 0;
+    border-radius: 7px;
+} */
+
+.faq {
+    background-color: #393e46;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faqlist {
+    color: #ffffff;
+}
+
+.faqtitle {
+    text-align: center;
+    color: #ffffff;
+    padding: 1em;
+    font-size: 2em;
+}
+
+.question {
+    background-color: none;
+    margin: 0 1em .5em 1em;
+    padding: .5em;
+    border: 2px solid #4ecca3;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: height 300ms ease, transform 300ms ease;
+    overflow: hidden;
+}
+
+.question svg {
+    float: inline-end;
+}
+
+.btn {
+    margin: 0 2em 2em 2em;
+    font-size: larger;
+    background-color: #4ecca3;
+    padding: .5em .5em .5em .5em;
+    border: none;
+    border-radius: 7px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+/* .faqbtn {
+    margin: 2em;
+    font-size: larger;
+    background-color: #4ecca3;
+    padding: .5em .5em .5em .5em;
+    border: none;
+    border-radius: 7px;
+    max-width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+} */
+
+/* .faqbtn:hover {
+    background-color: #63ffcb;
+}
+
+.faqbtn a {
+    color: #000000;
+    text-decoration: none;
+} */
+
+footer {
+    background-color: #393e46;
+}
+
+footer h1 {
+    color: #ffffff;
+    text-align: center;
+    padding: 1.25em;
+    font-size: 1.25em;
+}
+
+.footermenu {
+    display: flex;
+    justify-content: center;
+}
+
+.footermenu a {
+    color: #ffffff;
+    height: 3.125em;
+    padding: 0 1.875em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    border-radius: 7px;
+}

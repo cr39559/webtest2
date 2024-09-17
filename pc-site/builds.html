@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="builds.css">
+    <script src="javascript/menu.js"></script>
+    <title>x86 Customs | FAQ</title>
+</head>
+<body>
+
+    <!--Menu-->
+
+    <nav>
+
+        <!--Mobile Menu-->
+
+        <ul class="sidebar">
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="builds.html">Builds</a></li>
+        </ul>
+
+        <!--End of Mobile Menu-->
+
+        <!--Desktop Menu-->
+
+        <ul class="desktop-menu">
+            <a href="index.html" class="logo"><strong>x86 Customs</strong></a>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="builds.html">Builds</a></li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+
+        <!--End of Desktop Menu-->
+
+    </nav>
+
+    <!--End of Menu-->
+
+    <!--Banner-->
+
+    <section class="banner"></section>
+
+    <!--End of Banner-->
+
+    <!--Pre Configured Builds-->
+
+    <section class="builds"> <!--TODO: Add Tiers, for example, Budget Tier, Mid Tier etc.-->
+        <div class="builds--build">
+            <img class="builds--img" src="images/north.jpg">
+            <h1 class="builds--title">The Professional</h1> <!--Creative Title-->
+            <!-- <p class="builds--subtitle">Fractal Design North Workstation with NVIDIA RTX 4090</h2> Specs Title EX: Fractal North RTX 4070ti Super Gaming PC -->
+            <p class="builds--desc"><strong>Key Specs</strong></p> <!--Key Specs with estimated cost included, break down the cost between parts and labor. A pc part picker link also? Seperate lines by p tags? Use a list maybe?-->
+            <p class="builds--desc">Windows 10/11 Professional</p>
+            <p class="builds--desc">CPU: Intel Core i9 14900k</p>
+            <p class="builds--desc">GPU: NVIDIA RTX 4090</p>
+            <p class="builds--desc">Memory: 64gb</p>
+            <p class="builds--desc">Storage: 2tb Gen 5 NVMe SSD</p>
+            <p class="builds--desc">Case: Fractal Design North</p>
+            <p class="builds--desc">CPU Cooler: Noctua NH-D15</p>
+            <p class="builds--desc">Case Fans: 4 Noctua A12x25</p>
+            <p class="builds--desc">Power Supply: Corsair 1000w</p>
+            <p class="builds--desc"><strong>Estimated Price: $4000.00</strong></p>
+            <button class="builds--cta" onclick="window.location.href='mailto:christopher.reyna70@buc.blinn.edu';">Email Me</button>
+        </div>
+    </section>
+
+    <!--End of Pre Configured Builds-->
+
+    <footer>
+        <h1>Sitemap</h1>
+        <div class="footermenu">
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="builds.html">Builds</a>
+        </div>
+    </footer>
+
+</body>
+</html>
