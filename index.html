@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="javascript/menu.js"></script>
+    <script src="javascript/dropdown.js" defer></script>
+    <title>x86 Customs | Home</title>
+</head>
+<body>
+
+    <!--Menu-->
+
+    <nav>
+
+        <!--Mobile Menu-->
+
+        <ul class="sidebar">                        <!--fill="#dd0000"-->
+            <li onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="builds.html">Builds</a></li>
+        </ul>
+
+        <!--End of Mobile Menu-->
+
+        <!--Desktop Menu-->
+
+        <ul class="desktop-menu">
+            <a href="index.html" class="logo"><strong>x86 Customs</strong></a>
+            <li class="hideOnMobile"><a href="index.html">Home</a></li>
+            <li class="hideOnMobile"><a href="faq.html">FAQ</a></li>
+            <li class="hideOnMobile"><a href="gallery.html">Gallery</a></li>
+            <li class="hideOnMobile"><a href="builds.html">Builds</a></li>
+            <li class="menuButton" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" fill="#ffffff" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+
+        <!--End of Desktop Menu-->
+
+    </nav>
+
+    <!--End of Menu-->
+
+    <!--Banner-->
+
+    <section id="top-section">
+        <div class="banner">
+            <h2 style="color: #999;">x86 Customs</h2>
+            <h1 id="main-title">Affordable, Custom Gaming Computers</h1>
+            <p>
+                Welcome to x86 Customs, get ready to "assemble" your dream PC at an affordable price. <br><br><strong style="color: #4ecca3;">*This website is still a work in progress*</strong>
+            </p>
+            <button class="cta ctatop" onclick="window.location.href='mailto:christopher.reyna70@buc.blinn.edu';">Email Me</button> <!--Link to Email-->
+        </div>
+    </section>
+
+    <!--End of Banner-->
+
+    <!--My Services Section-->
+
+    <section class="top">
+        <h1 class="myservicestitle">My Services</h1>
+        <div class="cards">
+            <div class="card">
+                <h1>Custom PCs</h1>
+                <ul class="custompcslist">
+                    <li>Gaming PCs</li>
+                    <li>Workstations</li>
+                    <li>Home Servers</li>
+                    <li>Streaming PCs</li>
+                    <li>Budget PCs</li>
+                    <li>Office Workstations</li>
+                </ul>
+                <button class="cta" onclick="window.location.href='mailto:christopher.reyna70@buc.blinn.edu';">Email Me</button> <!--Link to Email -> Email should have a prewritten template-->
+            </div>
+            <div class="card">
+                <h1>PC Maintenence</h1>
+                <ul class="custompcslist">
+                    <li>PC Diagnostics</li>
+                    <li>PC Repair</li>
+                    <li>PC Cleaning Service</li>
+                </ul>
+                <button class="cta" onclick="window.location.href='mailto:christopher.reyna70@buc.blinn.edu';">Email Me</button> <!--Link to Email -> Email should have a prewritten template-->
+            </div>
+            <div class="card">
+                <h1>Upgrades</h1>
+                <ul class="custompcslist">
+                    <li>Component Upgrades</li>
+                    <li>Software Installation</li>
+                    <li>OS Installation</li>
+                </ul>
+                <button class="cta" onclick="window.location.href='mailto:christopher.reyna70@buc.blinn.edu';">Email Me</button> <!--Link to Email -> Email should have a prewritten template-->
+            </div>
+        </div>
+    </section>
+
+    <!--End of My Services Section-->
+
+    <!--FAQ Section-->
+
+    <section class="faq">
+        <h1 class="faqtitle">Top 10 Frequently Asked Questions</h1>
+        <div class="faqlist">
+            <div class="question">
+                Can you liquid cool my PC?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        Yes, I can liquid cool you PC, however consider that maintenece should be performed at least every 6 months.
+                        Also consider the extra cost and little performance gain from liquid cooling a system. Alternatively, you can
+                        liquid cool a CPU with an AIO (All in One) cooler and some graphics cards come with a pre attached AIO that do not require
+                        maintenence. Note, liquid cooled components will eventually permeate and will need to be replaced once the
+                        liquid has evaporated (Usually after 8+ years).
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                Will my computer be Windows 11 ready?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        As long as the CPU and the motherboard supports it, your PC should be Windows 11 ready. Most new CPUs
+                        and motherboards will support windows 11.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                Can you build with used parts?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        As long as the used parts are bought by the customer, yes I can build with used parts. This will however void
+                        any warranty associated with the build as well as refunds.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                Will I get a warranty with my PC?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        Yes, you will get a limited warranty (30 days) as most issues can be caught within a couple of days of the PC being powered on. You may
+                        contact me to diagnose the issue and replace any faulty components free of charge. Alternatively, a partial refund may be requested
+                        at any time before the 30 days are up. Please consider the following before asking for a refund; individual components may carry longer warranties from their respective 
+                        manufacturers. For example, some Seasonic power supplies carry up to a 10 year warranty.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                Can you install Linux on my PC?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        Yes, I can install linux on your PC as well as other operating systems.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                Why does my PC not display to my monitor?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        Sometimes, your PC may not display to a monitor. Please make sure A) you have plugged in the cable to the correct
+                        VGA port and B) that your monitor is turned on/correct input selected and C) that you restart the computer by holding
+                        the power button for a few seconds and turn it back on by pressing the power buttom. If all of those steps fail, Please
+                        feel free to contact me for assistance, or try looking up solutions yourself.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                Can you overclock my PC?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        Yes, I can overclock your components, but it will void the manufacturer warranty for each part that's
+                        overclocked. Additionally if a PC is overclocked, I cannot guarantee system stability as overclocking is outside
+                        of guaranteed system spec. You can contact me to return components to system rated spec if they become 
+                        unstable for a small fee.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                Is my PC upgradable?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        Yes, almost all custom PCs are upgradable. You can either upgrade them yourself or have me do it for you
+                        for a small fee.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                What if I dont want the PC anymore?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p><br>
+                        Unfortunately, if you no longer want the PC after the parts have been purchased either A) You can keep the parts
+                         or B) I may buy the parts if I have a use for them.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="faqlist">
+            <div class="question">
+                Do you have payment plans?
+                <svg class="dd" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffffff"><path d="M480-360 280-560h400L480-360Z"/></svg>
+                <div class="answer" style="display: none;">
+                    <p>
+                        <br>
+                        While I do not have payment plans right now, you can order a PC part by part until you have a full system.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <button class="faqbtn"><a href="builds.html">More FAQs</a></button>
+    </section>
+
+    <!--End of FAQ Section-->
+
+    <!--Pervious Builds Section-->
+
+    <section class="previousbuilds">
+        <h1 class="previousbuildstitle">Previous Builds</h1>
+        <div class="pb-images">
+            <img src="images/ll.jpg" class="pb-img">
+            <img src="images/p81.jpg" class="pb-img">
+            <img src="images/p82.jpg" class="pb-img">
+            <img src="images/phanteks.jpg" class="pb-img">
+            <img src="images/tt.jpg" class="pb-img">
+            <img src="images/nzxtrog.JPG" class="pb-img rog">
+            <img src="images/nzxtblue.JPG" class="pb-img">
+            <img src="images/montechred.JPG" class="pb-img">
+            <img src="images/phanteksredwhite.JPG" class="pb-img">
+
+        </div>
+    </section>
+
+    <!--End of Previous Builds Section-->
+
+    <!--About Me Section-->
+
+    <section class="aboutme">
+        <h1 class="aboutmetitle">About Me</h1>
+        <div class="aboutmearticle">
+            <div class="aboutmetext">
+                <h2>General</h2>
+                <p>
+                    Hello my name is Chris! I built this website to provide information on my private PC building buisness. I started my
+                    litte venture in order to fund my studies and to help you all build a custom computer to suit your needs. My main goal
+                    is to provide custom PC solutions without the hassle and computer jargon so all you have to worry about is experiencing
+                    your new build :) !
+                </p><br>
+                <h2>Academics</h2>
+                <p>
+                    Currently, I am a sophomore studying Computer Science at Blinn College and plan on attending Texas A&M Commerce in order to pursue
+                    my bachelors in Computer Science with a specialization in Web Development and Design.
+                </p><br>
+                <h2>Hobbies</h2>
+                <p>
+                    My hobbies include Web Development and design (Like this website), Computer building, and of course some videogames.
+                    At the time of making this website, I have been really enjoying computer building, which inspired me to make this website
+                    to advertise my services to those who want a custom computer without the corporate tax.
+                </p>
+            </div>
+            <img class="aboutmeimg" src="images/aboutme.jpg">
+        </div>
+    </section>
+
+    <!--End of About Me Section-->
+
+    <footer>
+        <h1>Sitemap</h1>
+        <div class="footermenu">
+            <a href="index.html">Home</a>
+            <a href="faq.html">FAQ</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="builds.html">Builds</a>
+        </div>
+    </footer>
+
+</body>
+</html>
